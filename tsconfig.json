@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "extends": "@fullstacksjs/tsconfig/react",
+  "include": ["src/**/*", "public/**/*"],
+  "exclude": ["node_modules", "build"],
+
+  "compilerOptions": {
+    "baseUrl": "src",
+    "incremental": true,
+    "jsx": "preserve",
+    "noPropertyAccessFromIndexSignature": false,
+    "typeRoots": ["../node_modules/@types", "../@types"]
+  }
+}
